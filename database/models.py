@@ -17,6 +17,8 @@ class ActivityPrediction(Base):
     torqa = Column(Float, nullable=False)
     woba = Column(Float, nullable=False)
     blockpos = Column(Float, nullable=False)
+    rop = Column(Float, nullable=False)
+    stppress = Column(Float, nullable=False)
 
     prediction_code = Column(Integer, nullable=False)
     prediction_label = Column(String(100), nullable=False)

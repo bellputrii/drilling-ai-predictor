@@ -7,7 +7,9 @@ ACTIVITY_FIELD_MAP = {
     "rpm": "rpm",
     "torqa": "torqa",
     "woba": "woba",
-    "blockpos": "blockpos"
+    "blockpos": "blockpos",
+    "stppress": "stppress",
+    "ropi":"rop"
 }
 
 # Mapping untuk CasingInput

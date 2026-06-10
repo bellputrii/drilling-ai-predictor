@@ -1,8 +1,9 @@
+
 import pandas as pd
 
 NUMERIC_COLS = [
     "mudflowin", "rpm", "woba", "Hookload",
-    "torqa", "blockpos", "bitdepth", "md"
+    "torqa", "blockpos", "bitdepth", "md", "rop", "stppress"
 ]
 
 

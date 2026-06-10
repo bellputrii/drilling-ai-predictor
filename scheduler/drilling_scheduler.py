@@ -69,7 +69,7 @@ def get_scheduler():
                     # Ambil hanya field yang ada di ActivityPrediction
                     record_data = {k: input_dict[k] for k in [
                         "bitdepth", "md", "Hookload", "mudflowin",
-                        "rpm", "torqa", "woba", "blockpos"
+                        "rpm", "torqa", "woba", "blockpos", "rop", "stppress"
                     ]}
 
                     record_data.update({
