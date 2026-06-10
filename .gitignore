@@ -1,0 +1,106 @@
+# ------------------------
+# Python virtual environment
+# ------------------------
+venv/
+ENV/
+env/
+.venv/
+
+# ------------------------
+# Python bytecode
+# ------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ------------------------
+# Distribution / packaging
+# ------------------------
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ------------------------
+# Installer logs
+# ------------------------
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ------------------------
+# Unit test / coverage reports
+# ------------------------
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# ------------------------
+# Jupyter Notebook checkpoints
+# ------------------------
+.ipynb_checkpoints
+
+# ------------------------
+# VSCode / IDE files
+# ------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ------------------------
+# MacOS
+# ------------------------
+.DS_Store
+
+# ------------------------
+# Logs / temp files
+# ------------------------
+*.log
+*.tmp
+*.bak
+*.swp
+
+# ------------------------
+# PyInstaller
+# ------------------------
+*.manifest
+*.spec
+
+# ------------------------
+# mypy / pylance / type hints
+# ------------------------
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+
+# ------------------------
+# Other temp files
+# ------------------------
+*.orig
+*.rej
+*.patch
+
+# ------------------------
+# Well client cache / compiled
+# ------------------------
+well_client/__pycache__/
