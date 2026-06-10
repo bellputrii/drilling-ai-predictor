@@ -4,27 +4,28 @@ FROM python:3.10-slim
 # Set working directory
 WORKDIR /app
 
-# Copy project ke container
-COPY . /app
-
-# Install dependencies
+# Install dependencies OS-level
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
-    curl \
     git \
+    curl \
     && rm -rf /var/lib/apt/lists/*
 
+# Copy project
+COPY . /app
+
+# Upgrade pip dan install dependencies Python
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Optional: create non-root user
+# Optional: non-root user
 RUN useradd -m appuser && chown -R appuser:appuser /app
 
-# Expose port FastAPI
-EXPOSE 8000
-
-# Run as non-root user
+# Set user
 USER appuser
 
-# Command untuk jalankan FastAPI
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+# Expose port
+EXPOSE 8000
+
+# Start FastAPI
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
