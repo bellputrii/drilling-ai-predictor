@@ -42,5 +42,5 @@ casing_api_scheduler = get_casing_api_scheduler()
 async def start_scheduler():
     # scheduler.start()
     # casing_scheduler.start()
-    activity_api_scheduler.start()
+    # activity_api_scheduler.start()
     casing_api_scheduler.start()
